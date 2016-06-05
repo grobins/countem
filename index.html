@@ -3,11 +3,30 @@
 <head>
     <title>Count 'em</title>
     <link rel="stylesheet" type="text/css" href="css/countem.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/phaser.min.js"></script>
     <script type="text/javascript" src="js/countem.js"></script>
 </head>
 <body>
-<div id="mygame"></div>
+
+    <div id = 'controls' style="display: table;">
+      <div style="display: table-row;">
+        <div style="display: table-cell;">
+            <div id='replayButton' onclick='create();'>
+                <i class="material-icons">replay</i>
+            </div>
+        </div>
+        <div style="display: table-cell;">
+        <input type="text" id="userGuess" placeholder="Type in your guess and press Enter" class="search" onkeydown="guess(this)"/>  
+        </div>
+        <div style="display: table-cell;">
+           <div id='resultIcon'></div>
+        </div>
+    </div>
+
+    <div id="mygame"></div>
+
+</div>
 </body>
 </html>
